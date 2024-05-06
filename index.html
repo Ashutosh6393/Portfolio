@@ -11,29 +11,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="lenis-style.css" />
   </head>
   <body>
+    <div id="preloader" class="layers">
+      <p>Loading Portfolio.</p>
+      <h2 class="counter">0%</h2>
+    </div>
+    <div class="layers" id="beige"></div>
+    <div class="layers" id="brown"></div>
     <div id="main">
       <div id="home-page" class="page">
+        <div class="circle3"></div>
         <header>
           <div id="logo">
             <div id="inner"></div>
           </div>
-          <ul id="nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">What I Know</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Get In Touch</a></li>
+          <ul class="nav">
+            <li><h6 class="scrollTo-about">About</h6></li>
+            <li><h6 class="scrollTo-skill">What I Know</h6></li>
+            <li><h6 class="scrollTo-projects">Projects</h6></li>
+            <li><h6 class="scrollTo-contact">Get In Touch</h6></li>
             <li><a href="#">Resume</a></li>
           </ul>
         </header>
         <div id="hero-text">
-          <h1>Hi There, I'am</h1>
-          <h1>Ashutosh Verma</h1>
-          <h5>A <span  class="webdev-underline">Web Developer</span> From Lucknow</h5>
+          <div class="heading-text"><h1>Hi There, I'am</h1></div>
+          <div class="heading-text"><h1>Ashutosh Verma</h1></div>
+
+          <h5>
+            A <span class="webdev-underline">Web Developer</span> From Lucknow
+          </h5>
         </div>
 
         <div id="scroll-element">
@@ -56,10 +67,10 @@
             </p>
             <p>
               I enjoy building websites and exploring new web technologies.
-              Through various projects, I've gained a deeper understanding of
+              Through various projects listed below, I've gained a deeper understanding of
               how modern websites are created and designed. These experiences
               have fueled my curiosity and drive to learn more about web
-              development.
+              development and create awesome projects.
             </p>
             <div class="button resume-button">
               Check Resume
@@ -130,7 +141,10 @@
               </p>
               <div class="project-links">
                 <div class="button project-button">Github</div>
-                <div class="button project-button">View Live <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                <div class="button project-button view-button">
+                  View Live
+                  
+                </div>
               </div>
             </div>
           </div>
@@ -146,11 +160,13 @@
               </p>
               <div class="project-links">
                 <div class="button project-button">Github</div>
-                <div class="button project-button">View Live <i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                <div class="button project-button view-button">
+                  View Live
+               
+                </div>
               </div>
             </div>
           </div>
-  
         </div>
       </div>
       <div id="contact-page" class="page">
@@ -160,17 +176,17 @@
         <footer>
           <div class="footer-navigation">
             <h4>Navigation</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">What I Know</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Download Resume</a></li>
+            <ul class="nav footer-nav-links">
+              <li><h6 class="scrollTo-home">Home</h6></li>
+              <li><h6 class="scrollTo-about">About</h6></li>
+              <li><h6 class="scrollTo-skill">What I Know</h6></li>
+              <li><h6 class="scrollTo-projects">Projects</h6></li>
+              <li><a href="#">Resume</a></li>
             </ul>
           </div>
           <div class="footer-navigation">
             <h4>Socials</h4>
-            <ul>
+            <ul class="nav footer-social-links">
               <li><a href="#">LinkedIn</a></li>
               <li><a href="#">Github</a></li>
               <li><a href="#">X (Twitter)</a></li>
@@ -183,6 +199,20 @@
         <p id="copy">© 2024 All rights reserved.</p>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
