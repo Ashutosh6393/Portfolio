@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="lenis-style.css" />
   </head>
   <body>
@@ -23,12 +24,13 @@
     </div>
     <div class="layers" id="beige"></div>
     <div class="layers" id="brown"></div>
+    <div class="cursor-dot"></div>
     <div id="main">
       <div id="home-page" class="page">
-        <div class="circle3"></div>
+        <div class="circle home-circle"></div>
         <header>
           <div id="logo">
-            <div id="inner"></div>
+            <div id="logo-second-circle"></div>
           </div>
           <ul class="nav">
             <li><h6 class="scrollTo-about">About</h6></li>
@@ -56,7 +58,10 @@
         <h1 class="page-heading about-heading">About Me.</h1>
         <div id="about-content">
           <div id="about-content-left">
-            <img src="images/my-image.webp" alt="" />
+            <img
+              src="images/my-image.webp"
+              alt="ashutosh verma's profile photo"
+            />
           </div>
           <div id="about-content-right">
             <p>
@@ -67,20 +72,20 @@
             </p>
             <p>
               I enjoy building websites and exploring new web technologies.
-              Through various projects listed below, I've gained a deeper understanding of
-              how modern websites are created and designed. These experiences
-              have fueled my curiosity and drive to learn more about web
-              development and create awesome projects.
+              Through various projects listed below, I've gained a deeper
+              understanding of how modern websites are created and designed.
+              These experiences have fueled my curiosity and drive to learn more
+              about web development and create awesome projects.
             </p>
             <div class="button resume-button">
-              Check Resume
+              Resume
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </div>
           </div>
         </div>
       </div>
       <div id="skill-page" class="page">
-        <div class="circle"></div>
+        <div class="circle skill-circle"></div>
         <h1 class="page-heading skill-heading">What I Know.</h1>
         <div id="skill-content">
           <div id="skill-card-container">
@@ -127,7 +132,7 @@
         </div>
       </div>
       <div id="project-page" class="page">
-        <h1 class="page-heading about-heading">My Projects.</h1>
+        <h1 class="page-heading project-heading">My Projects.</h1>
         <div id="project-card-container">
           <div class="project-card">
             <img src="images/project-1.webp" alt="" />
@@ -141,64 +146,64 @@
               </p>
               <div class="project-links">
                 <div class="button project-button">Github</div>
-                <div class="button project-button view-button">
-                  View Live
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="images/project-1.webp" alt="" />
-            <div class="card-content">
-              <h2>Mega Blog Website</h2>
-              <p>
-                Maze game V2 is finally here! The labyrinth is now 26x26, 4
-                difficulty settings (easy, normal, hard, expert), crystals to
-                collect, lives to keep, enemies to avoid. Will you be able to
-                beat my score?
-              </p>
-              <div class="project-links">
-                <div class="button project-button">Github</div>
-                <div class="button project-button view-button">
-                  View Live
-               
-                </div>
+                <div class="button project-button view-button">View Live</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="contact-page" class="page">
-        <div class="circle-2"></div>
-        <p class="sub">Got a project? Want to hire me?</p>
-        <h1>GET IN TOUCH.</h1>
-        <footer>
-          <div class="footer-navigation">
-            <h4>Navigation</h4>
-            <ul class="nav footer-nav-links">
-              <li><h6 class="scrollTo-home">Home</h6></li>
-              <li><h6 class="scrollTo-about">About</h6></li>
-              <li><h6 class="scrollTo-skill">What I Know</h6></li>
-              <li><h6 class="scrollTo-projects">Projects</h6></li>
-              <li><a href="#">Resume</a></li>
-            </ul>
-          </div>
-          <div class="footer-navigation">
-            <h4>Socials</h4>
-            <ul class="nav footer-social-links">
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
-              <li><a href="#">X (Twitter)</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">LeetCode</a></li>
-              <li><a href="#">Email</a></li>
-            </ul>
-          </div>
-        </footer>
-        <p id="copy">© 2024 All rights reserved.</p>
-      </div>
+      <div id="transparent-page"></div>
     </div>
+    <div id="contact-page" class="page">
+      <div class="circle contact-circle"></div>
+      <p class="contact-subheading">Got a project? Want to hire me?</p>
+      <h1>GET IN TOUCH.</h1>
+      <footer>
+        <div class="footer-navigation">
+          <h4>Navigation</h4>
+          <ul class="nav footer-nav-links">
+            <li><h6 class="scrollTo-home">Home</h6></li>
+            <li><h6 class="scrollTo-about">About</h6></li>
+            <li><h6 class="scrollTo-skill">What I Know</h6></li>
+            <li><h6 class="scrollTo-projects">Projects</h6></li>
+            <li><a download="#">Resume</a></li>
+          </ul>
+        </div>
+        <div class="footer-navigation">
+          <h4>Socials</h4>
+          <ul class="nav footer-social-links">
+            <li>
+              <a href="https://www.linkedin.com/in/ashutoshv19/" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Ashutosh6393" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/Ashutshv19" target="_blank"
+                >X (Twitter)</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ashutoshv.19/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://leetcode.com/u/Ashutosh-v8/" target="_blank"
+                >LeetCode</a
+              >
+            </li>
+            <li><a href="mailto:ashutoshv262@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </footer>
+      <p id="copyright">ashutoshv262 @gmail.com © 2024 All rights reserved.</p>
+    </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -211,8 +216,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="script.js"></script>
   </body>
 </html>
