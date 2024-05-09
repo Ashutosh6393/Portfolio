@@ -31,7 +31,7 @@
 
   .home-circle {
     height: 90vh;
-    width:90vh;
+    width: 90vh;
     bottom: -35vh;
   }
 
@@ -132,7 +132,7 @@
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-}
+  }
 
   .card-content h2 {
     font-size: 2.5rem;
@@ -148,8 +148,6 @@
     margin-left: 1rem;
     border: 1px solid var(--brown);
   }
-
- 
 
   #contact-page h1 {
     font-size: 11rem;
@@ -171,8 +169,10 @@
     font-size: 1.5rem;
   }
 }
-
 @media (max-width: 650px) {
+  .cursor-dot {
+    display: none;
+  }
   .page-heading {
     font-size: 8rem;
   }
@@ -205,10 +205,9 @@
 
   .home-circle {
     height: 90vh;
-    width:90vh;
+    width: 90vh;
     bottom: -40vh;
   }
-
 
   #scroll-element {
     font-size: 2.5rem;
@@ -341,8 +340,6 @@
     font-size: 3rem;
   }
 
-  
-
   .footer-navigation {
     width: 80%;
   }
@@ -360,16 +357,19 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 435px) {
+  .cursor-dot {
+    display: none;
+  }
   .page-heading {
     font-size: 10rem;
   }
   .button {
     padding-block: 1rem;
     padding-inline: 2.2rem;
-    font-size: 3.2rem;
+    font-size: 3rem;
     & i {
-      font-size: 3.2rem;
+      font-size: 3rem;
     }
   }
 
@@ -378,11 +378,11 @@
     margin-top: 5rem;
   }
 
-  #home-page{
+  #home-page {
     height: 100svh;
   }
 
-  .heading-text h1  {
+  .heading-text h1 {
     font-size: 11rem;
     line-height: 11rem;
   }
@@ -398,7 +398,7 @@
 
   .home-circle {
     height: 90vh;
-    width:90vh;
+    width: 90vh;
     bottom: -40vh;
   }
 
@@ -419,7 +419,7 @@
   .nav li h6,
   .nav li a:after,
   .nav li h6:after {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
   }
 
   /* ----aboutPage--- */
@@ -437,12 +437,12 @@
     height: 35rem;
     border: 5px solid var(--beige);
   }
-  #about-content-right{
+  #about-content-right {
     width: 100%;
   }
 
   #about-content-right p {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   /* -----skillPage----- */
@@ -476,17 +476,20 @@
 
   #skill-content p {
     margin-top: 3rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     width: 100%;
     text-align: left;
   }
 
   /* projectPage */
 
+  #project-page {
+    padding-bottom: 5rem;
+  }
   #project-card-container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     gap: 5rem;
   }
 
@@ -500,12 +503,12 @@
   }
 
   .card-content h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     padding-left: 3rem;
   }
 
   .card-content p {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding-inline: 3rem;
   }
 
@@ -524,7 +527,9 @@
   }
 
   .contact-circle {
-    bottom: -50%;
+    height: 90vh;
+    width: 90vh;
+    bottom: 0vh;
   }
 
   #contact-page h1 {
@@ -542,12 +547,12 @@
   }
 
   .footer-navigation {
-    width: 80%;
+    width: 100%;
   }
 
   .footer-navigation h4 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   .footer-navigation ul {
     align-items: center;
@@ -556,5 +561,31 @@
 
   #copyright {
     font-size: 2.7rem;
+  }
+  .page:not(#home-page, #contact-page) {
+    padding-block: 10rem;
+    padding-inline: 7.2rem;
+  }
+}
+@media (max-width: 350px) {
+  .page:not(#home-page, #contact-page) {
+    padding-block: 10rem;
+    padding-inline: 7.2rem;
+  }
+  #transparent-page {
+    height: 60vh;
+  }
+
+  #contact-page {
+    height: 60vh;
+  }
+
+  .contact-circle {
+    top: 30%;
+  }
+
+  .skill-circle {
+    height: 40vh;
+    width: 40vh;
   }
 }

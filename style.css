@@ -15,15 +15,14 @@
 
 html,
 body {
-  
   scroll-padding: 0.2rem;
   height: 100%;
   width: 100%;
   font-size: 1vw;
   font-family: "Playfair Display", serif;
   -webkit-user-select: none;
-  -ms-user-select: none; 
-  user-select: none; 
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* ----------Preloader----------- */
@@ -67,9 +66,9 @@ body {
 
 /* ------------------Universal classes-------------- */
 
-.cursor-dot{
-  width: .5rem;
-  height: .5rem;
+.cursor-dot {
+  width: 0.5rem;
+  height: 0.5rem;
   background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
@@ -88,7 +87,7 @@ body {
   -o-border-radius: 50%;
 }
 
-.circle{
+.circle {
   position: absolute;
   background: var(--light-brown);
   background: linear-gradient(180deg, var(--light-brown) 0%, var(--beige) 100%);
@@ -260,7 +259,7 @@ header {
   font-weight: 700;
 }
 
-.heading-text h1 .line{
+.heading-text h1 .line {
   height: 100%;
 }
 
@@ -278,8 +277,6 @@ header {
   -ms-transition: transform 0.1s;
   -o-transition: transform 0.1s;
 }
-
-
 
 /* ------------------About Page------------------- */
 
@@ -373,7 +370,6 @@ header {
 #skill-page {
   height: auto;
   background-color: var(--beige);
-  
 }
 
 #skill-content {
@@ -569,7 +565,7 @@ footer {
   z-index: 2;
 }
 
-#transparent-page{
+#transparent-page {
   width: 100%;
   height: 85vh;
   background-color: transparent;
@@ -587,7 +583,7 @@ footer {
   padding-block: 2rem;
   position: fixed;
   z-index: 1;
-  bottom: 0 ;
+  bottom: 0;
 }
 
 #copyright {
@@ -595,7 +591,7 @@ footer {
   font-size: 1rem;
   font-weight: 100;
   position: relative;
-  
+
   z-index: 2;
 }
 
@@ -608,7 +604,7 @@ footer {
   overflow: hidden;
 }
 
-#contact-page h1 .char{
+#contact-page h1 .char {
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);

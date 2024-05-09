@@ -199,6 +199,7 @@ const aboutPageAnimations = () => {
     stagger: 0.01,
     scrollTrigger: {
       trigger: "#about-page",
+      markers: true,
       start: "top 80%",
     },
   });
@@ -272,10 +273,10 @@ const contactPageAnimation = () => {
 
   gsap.from("footer", {
     delay: 1,
-    y: "40%",
+    y: "20%",
     opacity: 0,
     ease: "power1.out",
-    duration: 0.5,
+    duration: 0.8,
     scrollTrigger: {
       trigger: "#project-page",
       start: "bottom 40%",
