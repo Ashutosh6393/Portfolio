@@ -199,7 +199,6 @@ const aboutPageAnimations = () => {
     stagger: 0.01,
     scrollTrigger: {
       trigger: "#about-page",
-      markers: true,
       start: "top 80%",
     },
   });
