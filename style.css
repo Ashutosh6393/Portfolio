@@ -512,14 +512,18 @@ header {
 .project-button {
   cursor: pointer;
   background-color: var(--brown);
-  color: var(--beige);
   border: 2px solid var(--brown);
+  & a {
+    color: var(--beige);
+  }
 }
 
 .view-button {
   border: 2px solid var(--brown);
   background-color: var(--beige);
-  color: var(--brown);
+  & a {
+    color: var(--brown);
+  }
 }
 
 .project-card img {
